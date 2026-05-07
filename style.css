@@ -4,7 +4,10 @@ body {
 }
 
 hr {
-    background-color: black;
+    border: 0;
+    height: 2px;
+    background-color: black; /* Cambié a brown para que combine mejor */
+    margin: 40px 0;
 }
 
 nav {
@@ -17,4 +20,12 @@ h2 {
 
 h3 {
     color: brown;
+}
+
+.foto-equipo {
+    height: 190px;
+    width: 140px;
+    object-fit: cover;
+    border: 3px solid brown;
+    border-radius: 50%;
 }
