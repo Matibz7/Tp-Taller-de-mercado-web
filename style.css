@@ -1,4 +1,20 @@
+/* estilo de la parte nosotros.html */
 body {
     background-color: ivory
 }
 
+hr {
+    background-color: black;
+}
+
+nav {
+    color: brown;
+}
+
+h2 {
+    color:brown;
+}
+
+h3 {
+    color: brown;
+}
