@@ -116,6 +116,7 @@ header {
 
 .consulta h2 {
     text-align: center;
+    font-size: 1.8rem;
     color: brown;
     margin-bottom: 1rem;
 }
@@ -175,6 +176,7 @@ header {
 .informacion h3 {
     text-align: center;
     color: brown;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 .informacion p {
