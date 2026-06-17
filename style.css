@@ -1,3 +1,20 @@
+:root {
+    --color-primario: brown;
+    --color-secundario: #5e2f2f;
+    --color-acento: #E8611A;
+    --color-fondo-sitio: ivory;
+    --color-fondo-tarjeta: #fffaf0;
+    --color-texto-oscuro: #1A1A1A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 /* estilo de la parte nosotros.html */
 body {
     background-color: ivory
@@ -53,16 +70,28 @@ h3 {
     border-radius: 50%;
 }
 /*estilo de contacto*/
-/*  navegación  */
-.tituloDeContacto{
-        color: brown;
-
+body {
+    font-family:"lato",sans-serif;
+    background-color: var(--color-fondo-sitio);
+    color: var(--color-texto-oscuro);
+    line-height: 1.6;
 }
+
+/*
+   Header y navegacion
+ */
 header {
     text-align: center; 
     padding: 2rem 0;
-    background-color: ivory; 
-}.logo-sitio {
+    background-color: var(--color-fondo-sitio); 
+}
+
+.tituloDeContacto {
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+}
+
+.logo-sitio {
     margin-bottom: 1.5rem;       
 }
 
@@ -70,10 +99,9 @@ header {
     height: 120px;                
     width: auto;                  
     border-radius: 50%;           
-    border: 2px solid brown;      
+    border: 2px solid var(--color-primario);      
     transition: transform 0.3s ease; 
 }
-
 
 .logo-sitio img:hover {
     transform: scale(1.05);      
@@ -83,52 +111,72 @@ header {
     display: flex; 
     justify-content: center; 
     list-style: none; 
-    padding: 0;
     gap: 30px; 
     margin-top: 20px;
 }
 
 .listaDeContacto a {
     text-decoration: none; 
-    color: #E8611A; 
+    color: var(--color-acento); 
     font-weight: bold; 
     font-size: 1.1rem; 
-    line-height: 1.6;                     
     text-transform: uppercase;
     transition: color 0.3s; 
 }
 
 .listaDeContacto a:hover {
-    color: brown; 
+    color: var(--color-primario); 
 }
+
+/* 
+    Main y secciones
+    */
 .mainConsulta {
     max-width: 800px; 
     margin: 0 auto; 
     padding: 20px;
 }
 
-.consulta {
-    background-color: #fffaf0; 
+.consulta,
+.informacion {
+    background-color: var(--color-fondo-tarjeta); 
     padding: 2rem;
     margin-bottom: 2rem;
     border-radius: 8px;
-    border: 1px solid brown;
+    border: 1px solid var(--color-primario);
 }
 
-.consulta h2 {
+/* Estilos de titulos y párrafos*/
+.consulta h2,
+.informacion h3,
+#ubicacion h3 {
     text-align: center;
-    font-size: 1.8rem;
-    line-height: 1.6;                  
-    color: brown;
+    color: var(--color-primario);
     margin-bottom: 1rem;
 }
 
-.consulta p {
+.consulta h2 {
+    font-size: 1.8rem;
+}
+
+.informacion h3,
+#ubicacion h3 {
+    font-size: 1.5rem;
+}
+
+.consulta p,
+.informacion p {
     text-align: center;
-    line-height: 1.6;            
     margin-bottom: 2rem;
 }
 
+.informacion p {
+    font-size: 1.1rem;      
+}
+
+/* 
+   form
+   */
 .consulta form div {
     display: flex;
     flex-direction: column; 
@@ -138,26 +186,25 @@ header {
 .consulta label {
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: brown;
+    color: var(--color-primario);
 }
 
 .consulta input, 
 .consulta textarea {
     padding: 12px;
-    border: 1px solid brown;
+    border: 1px solid var(--color-primario);
     border-radius: 4px;
     font-size: 1rem;
-    line-height: 1.6;         
     font-family: inherit; 
 }
 
-/* El boton de envioo */
+/* Botón de envío */
 .consulta button[type="submit"] {
     display: block;
     margin: 1.5rem auto 0; 
     padding: 12px 30px;
-    background-color: brown;
-    color: ivory;
+    background-color: var(--color-primario);
+    color: var(--color-fondo-sitio);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -167,30 +214,12 @@ header {
 }
 
 .consulta button[type="submit"]:hover {
-    background-color: #5e2f2f;
-}
-.informacion {
-    background-color: #fffaf0;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    border: 1px solid brown;
+    background-color: var(--color-secundario);
 }
 
-.informacion h3 {
-    text-align: center;
-    color: brown;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.informacion p {
-    text-align: center;     
-    margin-bottom: 1.5rem;   
-    font-size: 1.1rem;      
-    color: #1A1A1A;
-}.informacion ul {
+/* Lista de información de contacto */
+.informacion ul {
     list-style: none; 
-    padding: 0;
     text-align: center;
 }
 
@@ -199,7 +228,7 @@ header {
 }
 
 .informacion a {
-    color: #E8611A;
+    color: var(--color-acento);
     text-decoration: none;
     font-weight: bold;
 }
@@ -208,17 +237,9 @@ header {
     text-decoration: underline;
 }
 
-/*mapa*/
-
-#ubicacion {
-    margin-top: 2rem;
-}
-
-#ubicacion h3 {
-    text-align: center;
-    color: brown;
-}
-
+/* 
+    mapa
+   */
 #ubicacion {
     max-width: 800px;        
     margin: 2rem auto;        
@@ -226,19 +247,23 @@ header {
     padding: 0 1rem;
 }
 
-#ubicacion iframe {
+
+.mapa-marco {
     width: 100%;              
     height: 400px;
     border-radius: 8px;
-    border: 2px solid brown;
+    border: 2px solid var(--color-primario);
     display: block;           
 }
-/*footer*/
+
+/* 
+footer
+*/
 .footer-principal {
-    background-color: ivory;
-    color: brown;
-    padding: 0.5rem 0.5rem 0.5rem;
-    border-top: 1px solid brown;
+    background-color: var(--color-fondo-sitio);
+    color: var(--color-primario);
+    padding: 2rem 0.5rem 1rem; 
+    border-top: 1px solid var(--color-primario);
     margin-top: 4rem;
 }
 
@@ -249,8 +274,7 @@ header {
     gap: 50px;               
     flex-wrap: wrap;          
     max-width: 1100px;
-    margin:  auto;        
-    padding:  auto;   
+    margin: 0 auto;        
 }
 
 .footer-contacto, 
@@ -262,21 +286,18 @@ header {
 
 .footer-principal h4 {
     font-size: 1.2rem;
-    color: #E8611A;
+    color: var(--color-acento);
     margin-bottom: 0.5rem; 
     text-transform: uppercase;
 }
 
-.footer-redes a{
+.footer-contacto a,
+.footer-redes a {
     text-decoration: none;      
-    color: brown;
+    color: var(--color-primario);
     font-weight: normal;
 }
-.footer-contacto a{
-    text-decoration: none;      
-    color: brown;
-    font-weight: normal;
-}
+
 /* Copyright centrado al final */
 .footer-copyright {
     text-align: center;
