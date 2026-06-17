@@ -306,7 +306,71 @@ footer
     border-top: 1px solid rgba(165, 42, 42, 0.1);
     font-size: 0.85rem;
 }
-/* estilo para index.html*/
-body {
-    background-color: brown;
+/*
+   8. boostrap*/
+
+/* Fondo de colorpara las tarjetas acopladas a la paleta del refugio */
+.bg-light-custom {
+    background-color: var(--color-fondo-tarjeta) !important;
+}
+.card h2, .card h3 {
+    color: var(--color-primario) !important;
+}
+
+/* Personalización de los hipervínculos de información */
+.text-accent {
+    color: var(--color-acento) !important;
+}
+.text-accent:hover {
+    text-decoration: underline !important;
+    color: var(--color-primario) !important;
+}
+
+.btn-custom {
+    background-color: var(--color-primario) !important;
+    color: var(--color-fondo-sitio) !important;
+    border: none !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.btn-custom:hover {
+    background-color: var(--color-secundario) !important;
+    transform: translateY(-2px); 
+}
+.navbar-nav {
+    gap: 15px !important; 
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-primario) !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.95rem; 
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--color-acento) !important; 
+    border-bottom: 2px solid var(--color-acento); /* Subrayado para destacar dónde está parado */
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-acento) !important; /* Al pasar el mouse también cambia a naranja */
+}
+
+/* Estilo para el botón hamburguesa responsivo */
+.navbar-toggler {
+    border-color: var(--color-primario) !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(23%) sepia(51%) saturate(2326%) hue-rotate(343deg) brightness(91%) contrast(90%);
+}
+
+/* Ajustes responsivos para el mapa lateral */
+.mapa-marco {
+    height: 320px;
+    border-radius: 8px;
+    border: 2px solid var(--color-primario);
+    display: block;
 }
