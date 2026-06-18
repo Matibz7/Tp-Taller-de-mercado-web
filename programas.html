@@ -4,106 +4,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
-    <title>Programas - Refugio Huellitas🐾-UNAHUR</title>
+    <title>Programas - Refugio Huellitas🐾 - UNAHUR</title>
 </head>
 <body>
 
+<body>
+
 <header>
-    <h1>Refugio Huellitas🐾-Programas</h1>
-    <nav>
-       <ul class="listaDeContacto">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="programas.html">Programas</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <h1>Refugio Huellitas🐾 - Programas</h1>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Refugio Huellitas</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="programas.html">Programas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </nav>
 </header>
 
-<main>
+<main class="container py-4">
 
-    
-    <section>
+    <section class="text-center mb-5">
         <h2>Nuestros Programas</h2>
-        <p>En nuestra ONG trabajamos con diferentes iniciativas para mejorar la vida de los animales y fomentar la adopción responsable.</p>
+
+        <p>
+            En nuestra ONG trabajamos con diferentes iniciativas para mejorar
+            la vida de los animales y fomentar la adopción responsable.
+        </p>
     </section>
 
-    
-    <section id="adopcion">
-        <article>
-            <h3>Programa de Adopción Responsable</h3>
+    <div class="row g-4">
 
-            <img src="fotos/Refugios.png" alt="Perros en adopción buscando hogar">
+        <!-- Programa 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 bg-light-custom">
 
-            <p>Este programa busca encontrar hogares definitivos para perros y gatos rescatados. Promovemos la <strong>adopción consciente</strong> y el compromiso a largo plazo.</p>
-            
-            <h4>¿A quién está dirigido?</h4>
-            <p>A personas y familias que quieran adoptar una mascota y estén dispuestas a brindarle cuidado y amor.</p>
-            
-            <h4>¿Cómo participar?</h4>
-            <ol>
-                <li>Completar el formulario de adopción.</li>
-                <li>Entrevista con nuestro equipo.</li>
-                <li>Visita al hogar.</li>
-                <li>Entrega del animal.</li>
-            </ol>
-        </article>
-    </section>
+                <img src="fotos/Refugios.png"
+                     class="card-img-top"
+                     alt="Perros en adopción">
 
-    
-    <section id="transito">
-        <article>
-            <h3>Programa de Tránsito</h3>
-            <p>Ofrecemos hogares temporales para animales rescatados hasta que encuentren una familia definitiva. Es fundamental para reducir la sobrepoblación en refugios.</p>
-            
-            <h4>¿A quién está dirigido?</h4>
-            <p>A personas que no pueden adoptar permanentemente pero sí ayudar temporalmente.</p>
-            
-            <h4>¿Cómo participar?</h4>
-            <ul>
-                <li>Inscribirse como hogar de tránsito.</li>
-                <li>Recibir asesoramiento veterinario.</li>
-                <li>Cuidar al animal hasta su adopción.</li>
-            </ul>
-        </article>
-    </section>
+                <div class="card-body">
 
-    
-    <section id="concientizacion">
-        <article>
-            <h3>Programa de Concientización</h3>
-            <p>Realizamos campañas educativas sobre el cuidado animal, la <em>esterilización</em> y la importancia de adoptar en lugar de comprar.</p>
-            
-            <h4>¿A quién está dirigido?</h4>
-            <p>A toda la comunidad, especialmente escuelas y jóvenes.</p>
-            
-            <h4>¿Cómo participar?</h4>
-            <p>Podés sumarte como voluntario o asistir a nuestras charlas y eventos.</p>
-        </article>
-    </section>
+                    <h3 class="card-title">
+                        Programa de Adopción Responsable
+                    </h3>
 
-    
-    <aside>
+                    <p>
+                        Este programa busca encontrar hogares definitivos
+                        para perros y gatos rescatados.
+                    </p>
+
+                    <h4>¿A quién está dirigido?</h4>
+
+                    <p>
+                        A personas y familias que quieran adoptar una mascota
+                        y estén dispuestas a brindarle cuidado y amor.
+                    </p>
+
+                    <h4>¿Cómo participar?</h4>
+
+                    <ol>
+                        <li>Completar el formulario de adopción.</li>
+                        <li>Entrevista con nuestro equipo.</li>
+                        <li>Visita al hogar.</li>
+                        <li>Entrega del animal.</li>
+                    </ol>
+
+                    <a href="contacto.html"
+                       class="btn btn-custom">
+                        Adoptar
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Programa 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 bg-light-custom">
+
+                <div class="card-body">
+
+                    <h3 class="card-title">
+                        Programa de Tránsito
+                    </h3>
+
+                    <p>
+                        Ofrecemos hogares temporales para animales rescatados
+                        hasta que encuentren una familia definitiva.
+                    </p>
+
+                    <h4>¿A quién está dirigido?</h4>
+
+                    <p>
+                        A personas que no pueden adoptar permanentemente
+                        pero sí ayudar temporalmente.
+                    </p>
+
+                    <h4>¿Cómo participar?</h4>
+
+                    <ul>
+                        <li>Inscribirse como hogar de tránsito.</li>
+                        <li>Recibir asesoramiento veterinario.</li>
+                        <li>Cuidar al animal hasta su adopción.</li>
+                    </ul>
+
+                    <a href="contacto.html"
+                       class="btn btn-custom">
+                        Ser hogar de tránsito
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Programa 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+
+            <div class="card h-100 bg-light-custom">
+
+                <div class="card-body">
+
+                    <span class="badge bg-warning text-dark mb-2">
+                        Educación
+                    </span>
+
+                    <h3 class="card-title">
+                        Programa de Concientización
+                    </h3>
+
+                    <p>
+                        Realizamos campañas educativas sobre el cuidado animal,
+                        la esterilización y la importancia de adoptar.
+                    </p>
+
+                    <h4>¿A quién está dirigido?</h4>
+
+                    <p>
+                        A toda la comunidad, especialmente escuelas y jóvenes.
+                    </p>
+
+                    <h4>¿Cómo participar?</h4>
+
+                    <p>
+                        Podés sumarte como voluntario o asistir a nuestras
+                        charlas y eventos.
+                    </p>
+
+                    <a href="contacto.html"
+                       class="btn btn-custom">
+                        Ser voluntario
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <aside class="alert alert-warning mt-5">
+
         <h4>¿Sabías qué?</h4>
-        <p>Adoptar una mascota no solo salva una vida, sino que también mejora la calidad de vida de quien adopta.</p>
-        <a href="#adopcion">Ir al programa de adopción</a>
+
+        <p>
+            Adoptar una mascota no solo salva una vida,
+            sino que también mejora la calidad de vida
+            de quien adopta.
+        </p>
+
+        <a href="#top">
+            Volver arriba
+        </a>
+
     </aside>
 
 </main>
 
-<footer>
-    <p>&copy;2026 Refugio Huellitas - UNAHUR</p>
+<footer class="footer-principal">
+
+    <div class="footer-copyright">
+        <p>&copy;2026 Refugio Huellitas - UNAHUR</p>
+    </div>
+
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 
 </body>
 </html>
