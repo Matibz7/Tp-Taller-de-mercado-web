@@ -376,37 +376,3 @@ footer
     border: 2px solid var(--color-primario);
     display: block;
 }
-/*modo oscuro*/
-body.dark-mode {
-    --color-fondo-sitio: #121212 !important;     
-    --color-fondo-tarjeta: #1E1E1E !important;   
-    --color-texto-oscuro: #F5F5F5 !important;    
-    --color-primario: #FFB7B2 !important;        
-}
-
-
-body.dark-mode .card,
-body.dark-mode .card h2,
-body.dark-mode .card h3,
-body.dark-mode .card p,
-body.dark-mode .card label,
-body.dark-mode .card li,
-body.dark-mode .card strong,
-body.dark-mode .text-muted {
-    color: #F5F5F5 !important;
-}
-
-/* Inputs adaptados dentro de las tarjetas */
-body.dark-mode .card input,
-body.dark-mode .card textarea {
-    background-color: #2A2A2A !important;
-    color: #FFFFFF !important;
-    border-color: var(--color-primario) !important;
-}
-
-/* Modificación para enlaces en modo oscuro */
-body.dark-mode .footer-principal,
-body.dark-mode .footer-contacto a,
-body.dark-mode .footer-redes a {
-    color: #F5F5F5 !important;
-}
