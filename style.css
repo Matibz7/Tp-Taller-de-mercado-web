@@ -374,3 +374,64 @@ footer
     border: 2px solid var(--color-primario);
     display: block;
 }
+
+/*estilo del index*/
+/*color del fondo y de texto*/
+body {
+    background-color: #fdfbf2; 
+    color: #4a3b32;            
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/*estilo del navegacion*/
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #9c3a32;            
+    font-weight: 600;
+    text-transform: uppercase; 
+    letter-spacing: 1px;       
+    transition: all 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: orange;             
+    transform: translateY(-2px); 
+}
+nav hr {
+    border: none;
+    border-top: 1px solid #ebdccb;
+    margin: 40px 0;
+}
+/*estilo de footer*/
+footer {
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-top: 1px solid #ebdccb;
+}
+/*estilo y color de parrafos y titulos*/
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #9c3a32;            
+    font-weight: 700;
+}
+
+strong {
+    color: #1a1a1a;
+    font-weight: bold;
+}
