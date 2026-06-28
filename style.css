@@ -1,9 +1,10 @@
 :root {
-    --color-primario: brown;
-    --color-secundario: #5e2f2f;
-    --color-acento: #E8611A;
-    --color-fondo-sitio: ivory;
-    --color-fondo-tarjeta: #fffaf0;
+    
+    --color-primario: brown;        
+    --color-secundario: #5e2f2f;    
+    --color-acento: #E8611A;        
+    --color-fondo-sitio: ivory;     
+    --color-fondo-tarjeta: #fffaf0; 
     --color-texto-oscuro: #1A1A1A;
 }
 
@@ -75,6 +76,7 @@ body {
     background-color: var(--color-fondo-sitio);
     color: var(--color-texto-oscuro);
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /*
@@ -298,7 +300,7 @@ footer
     font-weight: normal;
 }
 
-/* Copyright centrado al final */
+/* Copyright centrado */
 .footer-copyright {
     text-align: center;
     margin-top: 2rem;
@@ -307,7 +309,7 @@ footer
     font-size: 0.85rem;
 }
 /*
-   8. boostrap*/
+    boostrap
 
 /* Fondo de colorpara las tarjetas acopladas a la paleta del refugio */
 .bg-light-custom {
@@ -355,7 +357,7 @@ footer
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--color-acento) !important; /* Al pasar el mouse también cambia a naranja */
+    color: var(--color-acento) !important; /* Al pasar el mouse cambia a naranja */
 }
 
 /* Estilo para el botón hamburguesa responsivo */
@@ -367,10 +369,44 @@ footer
     filter: invert(23%) sepia(51%) saturate(2326%) hue-rotate(343deg) brightness(91%) contrast(90%);
 }
 
-/* Ajustes responsivos para el mapa lateral */
+
 .mapa-marco {
     height: 320px;
     border-radius: 8px;
     border: 2px solid var(--color-primario);
     display: block;
+}
+/*modo oscuro*/
+body.dark-mode {
+    --color-fondo-sitio: #121212 !important;     
+    --color-fondo-tarjeta: #1E1E1E !important;   
+    --color-texto-oscuro: #F5F5F5 !important;    
+    --color-primario: #FFB7B2 !important;        
+}
+
+
+body.dark-mode .card,
+body.dark-mode .card h2,
+body.dark-mode .card h3,
+body.dark-mode .card p,
+body.dark-mode .card label,
+body.dark-mode .card li,
+body.dark-mode .card strong,
+body.dark-mode .text-muted {
+    color: #F5F5F5 !important;
+}
+
+/* Inputs adaptados dentro de las tarjetas */
+body.dark-mode .card input,
+body.dark-mode .card textarea {
+    background-color: #2A2A2A !important;
+    color: #FFFFFF !important;
+    border-color: var(--color-primario) !important;
+}
+
+/* Modificación para enlaces en modo oscuro */
+body.dark-mode .footer-principal,
+body.dark-mode .footer-contacto a,
+body.dark-mode .footer-redes a {
+    color: #F5F5F5 !important;
 }
