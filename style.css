@@ -16,60 +16,137 @@
 
 
 
-/* estilo de la parte nosotros.html */
+    /* estilo de la parte nosotros.html */
+
 body {
-    background-color: ivory
+    font-family: 'Lato', sans-serif;
+    background-color: ivory;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
 }
 
-hr {
-    border: 0;
-    height: 2px;
-    background-color: black; /* Cambié a brown para que combine mejor */
-    margin: 40px 0;
+.contenido-nosotros {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 nav {
     color: brown;
 }
 
-h2 {
+h1, h2, h3 {
     color:brown;
+    margin-bottom:  0.5em;
+    margin-top: 1.5em;
 }
 
-h3 {
+p, ul {
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+
+.navegacion {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    list-style: none;
+    
+}
+}
+
+.navegacion a {
+    text-decoration: none;
     color: brown;
-}
-    * estilo de la parte nosotros.html */
-body {
-    background-color: ivory
-}
-
-hr {
-    border: 0;
-    height: 2px;
-    background-color: black; /* Cambié a brown para que combine mejor */
-    margin: 40px 0;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
 }
 
-nav {
-    color: brown;
+
+
+nav ul li a:hover {
+    color: #f60;
+    border-bottom: 3px solid #f60;
 }
 
-h2 {
-    color:brown;
-}
-
-h3 {
-    color: brown;
+nav ul li a.ubicacion {
+    color: #f60;
+    border-bottom: 3px solid #f60;
 }
 
 .foto-equipo {
-    height: 190px;
+    height: 140px;
     width: 140px;
     object-fit: cover;
+    object-position: center 50%; 
     border: 3px solid brown;
     border-radius: 50%;
 }
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.tarjeta-miembro{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+    width: 200px;
+}
+
+.tarjeta-miembro h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+    height: 2.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.cargo {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+
+    /* finaliza nosotros.html
+
 /*estilo de contacto*/
 body {
     font-family:"lato",sans-serif;
