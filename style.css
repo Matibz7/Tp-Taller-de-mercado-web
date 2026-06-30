@@ -172,6 +172,10 @@ nav ul li a.ubicacion {
     border-bottom: 3px solid #f60;
 }
 
+strong {
+    color: brown
+}
+
 .foto-equipo {
     height: 140px;
     width: 140px;
