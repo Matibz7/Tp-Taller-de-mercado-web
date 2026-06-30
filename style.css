@@ -102,10 +102,16 @@ nav {
     color: brown;
 }
 
-h1, h2, h3 {
+h1 {
+    font-size: 2rem;
+    margin: 10px;
+    text-align: center;
+}
+
+h2, h3 {
     color:brown;
     margin-bottom:  0.5em;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 p, ul {
@@ -120,17 +126,17 @@ header nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding: 20px;
+    gap: 15px;
+    padding: 20px 0;
 }
 
 /*este es el nav*/
 .navegacion {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
-    padding: 0;
+    padding: 30px;
 }
 
 @media (max-width: 600px) {
