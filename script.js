@@ -1,3 +1,4 @@
+/*modo oscuro/claro*/
 document.addEventListener("DOMContentLoaded", function () {
     // Capturamos el botón del DOM mediante su ID único
     const btnTheme = document.getElementById("btn-theme");
